@@ -1,3 +1,5 @@
+"use strict";
+
 // Find the maximum of two numbers
 function max(a: number, b: number): number {
   return a > b ? a : b;
