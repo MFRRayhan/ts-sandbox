@@ -1,15 +1,16 @@
-const orders = new Map();
+const orders = new Map<string, number>();
 
-function addOrder(juice: string) {
-  const qty = (orders.get(juice) ?? 0) + 1;
-  orders.set(juice, qty);
+function addOrder(drinks: string) {
+  const quantity = (orders.get(drinks) ?? 0) + 1;
+  orders.set(drinks, quantity);
 }
 
-addOrder("Lemon");
-addOrder("Lemon");
-addOrder("Lemon");
-addOrder("MilkShake");
-addOrder("MilkShake");
-addOrder("ColdCoffee");
+addOrder("lemon");
+addOrder("lemon");
+addOrder("lemon");
+addOrder("milkshake");
+addOrder("milkshake");
+addOrder("coke");
+addOrder("coke");
 
 console.log(orders);
