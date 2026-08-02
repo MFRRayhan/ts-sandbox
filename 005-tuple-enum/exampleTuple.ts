@@ -21,7 +21,7 @@ const player: Player[] = [
 
 type OrderItem = readonly [number, number];
 const item: OrderItem = [20, 30];
-
+// item.push(10); // error: readonly tuple হওয়ায় push(), pop(), splice() ইত্যাদি mutating method ব্যবহার করা যায় না।
 console.log(item);
 
 /* -------------------------------------------------------------------------- */
