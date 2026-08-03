@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Task List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Task List</h1>
+
+      <form id="task-form" class="task-form">
+        <label for="task">Add a task</label>
+
+        <div class="input-group">
+          <input type="text" id="task" placeholder="Enter a new task" />
+          <button id="form-btn" type="submit">Add Task</button>
+        </div>
+      </form>
+
+      <ul id="task-list" class="task-list">
+        <!-- sample task data -->
+        <li>
+          <label>
+            <input type="checkbox" checked />
+            <span>Buy Laptop</span>
+          </label>
+        </li>
+
+        <li>
+          <label>
+            <input type="checkbox" />
+            <span>Buy Groceries</span>
+          </label>
+        </li>
+
+        <li>
+          <label>
+            <input type="checkbox" checked />
+            <span>Complete HTML Practice</span>
+          </label>
+        </li>
+
+        <li>
+          <label>
+            <input type="checkbox" />
+            <span>Read TypeScript Notes</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
